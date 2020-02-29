@@ -1,0 +1,6 @@
+<view>
+  <sku-select skuList="{{skuList}}" attributeList="{{attributeList}}" onChange="attributeOnChange" />
+  <view class="price">price: {{price == '' ? 'not confirm attr' : price}}</view>
+  <view class="sku">skuNames: {{skuDesc}}</view>
+  <button size="default" type="primary" disabled="{{!hasStock}}" onTap="confirmBuy">确认购买</button>
+</view>

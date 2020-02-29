@@ -1,0 +1,16 @@
+<!-- <view class="title">属性值联动选择</view>  -->
+<!--options-->
+<view class="commodity_attr_list"> 
+  <!--每组属性-->
+  <view class="attr_box" a:for="{{specifications}}" a:for-item="attrObj" a:for-index="attrIndex"> 
+   <!--属性名-->
+   <view class="attr_name">{{attrObj.name}}</view> 
+  
+   <!--属性值-->
+   <view class="attr_value_box"> 
+     <!--每个属性值 attr_value_active,attr_value_disabled-->
+     <view a:for="{{attrObj.values}}" class="attr_value {{item.state ? 'attr_value_disabled' : ''}} {{item.isSel ? 'attr_value_active' : ''}}" onTap="{{item.state ? '' : 'selectAttrValue'}}" data-key="{{attrObj.id}}" data-value="{{item.name}}" data-is-sel="{{item.isSel}}" data-index="{{index}}" data-attrIndex="{{attrIndex}}">{{item.name}}</view> 
+   </view> 
+ </view> 
+</view> 
+

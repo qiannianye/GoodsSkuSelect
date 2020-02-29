@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "Goods sku select",
+  "usingComponents":{
+    "sku-select": "/components/sku-select/index"
+  }
+}

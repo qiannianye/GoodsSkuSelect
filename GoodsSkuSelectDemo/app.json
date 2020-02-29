@@ -1,0 +1,9 @@
+{
+  "pages": [
+    "pages/sku-test/sku-test",
+    "pages/index/index"
+  ],
+  "window": {
+    "defaultTitle": "My App"
+  }
+}
